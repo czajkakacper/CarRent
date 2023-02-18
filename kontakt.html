@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Kontakt</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/lokalizacja.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Wypożyczalnia samochodów <i>CarRent</i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="wynajem.html">Wynajem</a></li>
+                        <li class="nav-item"><a class="nav-link" href="flota.html">Flota</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rejestracja.html">Zarejestruj się</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder"><i>Jak się z nami skontaktować?</i></h1>
+                </div>
+            </div>
+        </header>
+        <!-- Page content-->
+        <div class="container px-lg-5"> 
+            <div class="text-center mt-5">
+                <h1>Gdzie nas znaleźć?</h1>
+                <p><button onclick="getLocation()">Pokaż moją lokalizację</button></p>
+                <div id="mapka"></div>
+                <div id="geo" style="text-align: center;"></div>
+                <section class="py-5 border-bottom" id="features">
+                    <div class="container px-5 my-5">
+                        <div class="row gx-5">
+                            <div class="col-lg-4 mb-5 mb-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-facebook"></i></div>
+                                <h2 class="h4 fw-bolder">Facebook - <i>CarRent</i></h2>
+                                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                                <a class="text-decoration-none" href="https://www.facebook.com" target="_blank">
+                                    Dołącz do nas
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 mb-5 mb-lg-0">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-instagram"></i></div>
+                                <h2 class="h4 fw-bolder">Instagram - <i>CarRent</i></h2>
+                                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                                <a class="text-decoration-none" href="https://www.instagram.com/" target="_blank">
+                                    Dołącz do nas
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-youtube"></i></div>
+                                <h2 class="h4 fw-bolder">Youtube - <i>CarRent</i></h2>
+                                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                                <a class="text-decoration-none" href="https://www.youtube.com/" target="_blank">
+                                    Dołącz do nas
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Autor: Kacper Czajka<br/>Wszelkie prawa zastrzeżone</p></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>                        
+    </body>
+</html>

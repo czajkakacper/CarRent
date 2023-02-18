@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Formularz</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>    
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#!">Wypożyczalnia samochodów <i>CarRent</i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Wynajem</a></li>
+                        <li class="nav-item"><a class="nav-link" href="flota.html">Flota</a></li>
+                        <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rejestracja.html">Zarejestruj się</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container col-sm-6 gx-4">
+            <main>
+                <!--<form action="mailto:s95378@pollub.edu.pl" method="post" onsubmit="return zapisz()"> -->
+                <div class="py-5 text-center">
+                    <h2>Wypełnij formularz by cieszyć się swoim wymarzonym autem!</h2>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-7 col-lg-8">
+                        <h4 class="mb-3">Wybierz konfigruacje swojego samochodu</h4>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-sm-12">
+                            <label for="imie" class="form-label">Imię</label>
+                            <input type="text" class="form-control" id="imie" placeholder="" value="" />
+                            <span id="imie_error" class="czerwone"></span>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="nazwisko" class="form-label">Nazwisko</label>
+                            <input type="text" class="form-control" id="nazwisko" placeholder="" value="" />
+                            <div id="nazwisko_error" class="czerwone"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted">(Przykładowo)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" />
+                            <div id="email_error" class="czerwone"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="wiek" class="form-label">Wiek</label>
+                            <input type="number" class="form-control" id="wiek" min="18" max="90" />
+                            <div id="wiek_error" class="czerwone"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="telefon" class="form-label">Numer telefonu</label>
+                            <input type="number" class="form-control" id="telefon" required />
+                            <div id="telefon_error" class="czerwone"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="kluczyki" class="form-label">Ilość kluczyków</label>
+                            <input type="number" class="form-control" id="kluczyki" min="1" max="5" step="1" />
+                            <div id="kluczyki_error" class="czerwone"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="data" class="form-label">Data rezerwacji</label>
+                            <input type="date" class="form-control" id="data" name="data" />
+                            <div id="data_error" class="czerwone"></div>
+                        </div>
+                        <div class="col-12">
+                            <label for="czas" class="form-label">Preferowany czas odbioru</label>
+                            <input type="time" class="form-control" id="czas" min="06:00" max="23:00" name="czas"  />
+                            <div id="czas_error" class="czerwone"></div>
+                        </div>
+                        <h4 class="mb-3">Rodzaj nadwozia</h4>
+                        <div class="my-3">
+                            <div class="form-check">
+                              <input id="coupe" name="nadwozie" value="Coupe" type="radio" class="form-check-input" checked>
+                              <label class="form-check-label" for="coupe">Coupé</label>
+                            </div>
+                            <div class="form-check">
+                              <input id="hatchback" name="nadwozie" type="radio" value="Hatchback" class="form-check-input" >
+                              <label class="form-check-label" for="hatchback">Hatchback</label>
+                            </div>
+                            <div class="form-check">
+                              <input id="kabriolet" name="nadwozie" type="radio" value="Kabriolet" class="form-check-input" >
+                              <label class="form-check-label" for="kabriolet">Kabriolet</label>
+                              </div>
+                            <div class="form-check">
+                              <input id="kombi" name="nadwozie" type="radio" value="Kombi" class="form-check-input" >
+                              <label class="form-check-label" for="kombi">Kombi</label>
+                            </div>
+                            <div class="form-check">
+                              <input id="sedan" name="nadwozie" type="radio" value="Sedan" class="form-check-input" >
+                              <label class="form-check-label" for="sedan">Sedan</label>
+                            </div>
+                            <div class="form-check">
+                              <input id="suv" name="nadwozie" type="radio" value="SUV" class="form-check-input" >
+                              <label class="form-check-label" for="suv">SUV</label>
+                            </div>
+                            <span id="nadwozie_error"></span>
+                          </div>
+                          <div class="my-3">
+                            <h4 class="mb-3">Dodatkowe wyposażenie</h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="wyposazenie" value="Klimatyzacja" id="klimatyzacja" checked disabled>
+                                <label class="form-check-label" for="klimatyzacja">Klimatyzacja</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="systemy ESP i ABS" name="wyposazenie" id="systemy" checked disabled>
+                                <label class="form-check-label" for="systemy">Systemy: ESP i ABS</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Tapicerka skórzana" name="wyposazenie" id="tapicerka">
+                                <label class="form-check-label" for="tapicerka">Tapicerka skórzana</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="tempomat" name="wyposazenie" id="tempomat">
+                                <label class="form-check-label" for="tempomat">Tempomat</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Radio z bluetooth" name="wyposazenie" id="radio">
+                                <label class="form-check-label" for="radio">Radio z bluetooth</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="Czuniki" name="wyposazenie" id="czujniki">
+                                <label class="form-check-label" for="czujniki">Czujniki parkowania</label>
+                            </div>
+                          </div>
+                          <h4 class="mb-3">Rodzaj silnika</h4>
+                          <div class="my-3">
+                            <select class="form-select" aria-label="Default select example" id="silnik">
+                              <option value="Wysokoprężny" selected>Wysokoprężny</option>
+                              <option value="Benzynowy">Benzynowy</option>
+                              <option value="Elektryczny">Elektryczny</option>
+                              <option value="Hybrydowy">Hybrydowy</option>
+                           </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="komentarz" class="form-label">Uwagi do zamówienia</label>
+                            <textarea class="form-control" id="komentarz" rows="3"></textarea>
+                          </div>
+                          <p>
+                            <button onclick="zapisz()">Zapisz</button>
+                            <button onclick="pokaz()">Wyświetl</button>
+                            <button onclick="usun()">Usuń</button>
+                            <button onclick="usunWynajem()">Anuluj rezerwacje po emailu</button>
+                          </p>
+                          <div id="cart"></div>
+                    </div>
+                </div>
+            <!--</form>-->
+            </main>
+        </div>        
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Autor: Kacper Czajka<br/>Wszelkie prawa zastrzeżone</p></div>
+        </footer>    
+    </body>
+</html>
