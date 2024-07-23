@@ -1,5 +1,6 @@
 # CarRent
 ### About
+<<<<<<< HEAD
 Web Application written in a clear HTML5
 
 ### Technologies
@@ -15,3 +16,8 @@ Web Application written in a clear HTML5
 
 # Contact Us
 
+=======
+
+
+### Used Technologies
+>>>>>>> a6a5bbc7543c24f08f8bd7f71959c2b003458bca
