@@ -3,7 +3,7 @@
 The website was written in HTML5. CSS was used to style the website using Bootstrap. JavaScript was used to validate forms and localization.
 
 # Technologies
-[![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,js,ts,react)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,bootstrap,js)](https://skillicons.dev)
 
 # Screenshots
 ### Main Page
